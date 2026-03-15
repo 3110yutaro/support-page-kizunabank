@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kizuna Bank - サポートページ</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.8;
+        }
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .header h1 {
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 12px;
+        }
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .section h2 {
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: #2c3e50;
+        }
+        .section p {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 12px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .feature {
+            background: #f0f4f8;
+            border-radius: 12px;
+            padding: 16px;
+        }
+        .feature h3 {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #2c3e50;
+        }
+        .feature p {
+            font-size: 13px;
+            color: #666;
+            margin: 0;
+        }
+        .contact-form {
+            margin-top: 16px;
+        }
+        .contact-form label {
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #2c3e50;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 15px;
+            margin-bottom: 16px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        .contact-form textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        .contact-form button {
+            background: #3498db;
+            color: #fff;
+            border: none;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .contact-form button:hover {
+            background: #2980b9;
+        }
+        .contact-email {
+            margin-top: 16px;
+            padding: 16px;
+            background: #f0f4f8;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .contact-email a {
+            color: #3498db;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .links {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 8px;
+        }
+        .links a {
+            color: #3498db;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            padding: 32px 20px;
+            color: #999;
+            font-size: 13px;
+        }
+        @media (max-width: 600px) {
+            .header h1 { font-size: 28px; }
+            .features { grid-template-columns: 1fr; }
+            .section { padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Kizuna Bank</h1>
+        <p>あなたの人間関係を、大切に貯めていくアプリ</p>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Kizuna Bankについて</h2>
+            <p>
+                Kizuna Bank(きずなバンク)は、友達やマッチングアプリで出会った相手との記録を、まるごと管理できる人間関係マネジメントアプリです。
+            </p>
+            <p>
+                出会いのメモ、交際費の記録、写真や音声メモまで、すべてを一つのアプリで管理。PINロック機能でプライベートな情報もしっかり守ります。
+            </p>
+
+            <div class="features">
+                <div class="feature">
+                    <h3>友達プロフィール管理</h3>
+                    <p>可愛いアバターや写真で友達を登録。趣味や誕生日もメモ。</p>
+                </div>
+                <div class="feature">
+                    <h3>記録&交際費トラッキング</h3>
+                    <p>タイムラインで記録。交際費も自動集計。</p>
+                </div>
+                <div class="feature">
+                    <h3>写真&音声メモ</h3>
+                    <p>テキストだけでなく、写真や音声でも思い出を記録。</p>
+                </div>
+                <div class="feature">
+                    <h3>PINロック&プライバシー</h3>
+                    <p>フォルダーごとにロック。見られたくない記録も安心。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>お問い合わせ</h2>
+            <p>
+                Kizuna Bankに関するご質問、不具合のご報告、ご要望などがございましたら、下記メールアドレスまでお気軽にお問い合わせください。
+            </p>
+            <div class="contact-email">
+                <p style="margin-bottom: 8px; font-size: 14px; color: #666;">メールでのお問い合わせ</p>
+                <a href="mailto:saitoyutaro.official@gmail.com">saitoyutaro.official@gmail.com</a>
+            </div>
+            <p style="margin-top: 16px; font-size: 13px; color: #999;">
+                ※ お問い合わせへの返信には数日いただく場合がございます。
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>リンク</h2>
+            <div class="links">
+                <a href="privacy-policy.html">プライバシーポリシー</a>
+                <a href="terms-of-use.html">利用規約</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Kizuna Bank. All rights reserved.</p>
+    </div>
+</body>
+</html>
